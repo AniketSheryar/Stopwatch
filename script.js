@@ -14,8 +14,6 @@ function start() {
     isRunning = true;
     startTime = Date.now() - elapsedTime;
     timer = setInterval(updateDisplay, 10);
-    // startBtn.disabled = true;
-    // pauseBtn.disabled = false;
     startBtn.style.display = "none";
     resetBtn.style.display = "none";
     pauseBtn.style.display = "inline-block";
@@ -27,8 +25,6 @@ function pause() {
   if (isRunning) {
     isRunning = false;
     clearInterval(timer);
-    // startBtn.disabled = false;
-    // pauseBtn.disabled = true;
     pauseBtn.style.display = "none";
     flagBtn.style.display = "none";
     resetBtn.style.display = "inline-block";
@@ -41,8 +37,6 @@ function reset() {
   elapsedTime = 0;
   clearInterval(timer);
   display.textContent = "00:00:00";
-  // startBtn.disabled = false;
-  // pauseBtn.disabled = false;
   clearFlags();
   pauseBtn.style.display = "none";
   resetBtn.style.display = "none";
