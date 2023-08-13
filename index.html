@@ -8,12 +8,16 @@
   </head>
   <body background="imgs/wp9274653-4k-desktop-white-wallpapers.jpg">
     <div class="stopwatch">
-      <div id="display">00:00:00</div>
-      <button id="startBtn" onclick="start()">Start</button>
-      <button id="pauseBtn" onclick="pause()">Pause</button>
-      <button id="resetBtn" onclick="reset()">Reset</button>
-      <button id="flagBtn" onclick="flag()">Flag</button>
-      <ul id="flagsList"></ul>
+      <div class="header">
+        <div id="display">00:00:00</div>
+        <button id="startBtn" onclick="start()">Start</button>
+        <button id="pauseBtn" onclick="pause()">Pause</button>
+        <button id="resetBtn" onclick="reset()">Reset</button>
+        <button id="flagBtn" onclick="flag()">Flag</button>
+      </div>
+      <div class="Flist">
+        <ul id="flagsList"></ul>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
